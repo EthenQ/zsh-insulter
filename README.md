@@ -23,13 +23,12 @@ noob@bender:~ $ sp aux
 
 # Installation
 
-    git clone https://github.com/hkbakke/bash-insulter.git bash-insulter
-    sudo cp bash-insulter/src/bash.command-not-found /etc/
+    grab the zsh.command-not-found and paste it where-ever you want. (e.g. ~/.zshInsulter/ to keep it for you. and not bothering other users)
 
 Then source the file automatically for new logins by adding the following to `/etc/bash.bashrc`:
 ```
-if [ -f /etc/bash.command-not-found ]; then
-    . /etc/bash.command-not-found
+if [ -f ~/.zshInsulter/zsh.command-not-found ]; then
+    . ~/.zshInsulter/zsh.command-not-found
 fi
 ```
-Login again and type some invalid commands for the effects to be visible.
+Start a new zsh shell and type some invalid commands for the effects to be visible.
